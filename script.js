@@ -4,6 +4,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const modalImg = document.getElementById('galleryModalImg');
     const modalLabel = document.getElementById('galleryModalLabel');
     const modalDesc = document.getElementById('galleryModalDesc');
+    
+    // Gallery Nav Logic
+    const photosTab = document.getElementById('galleryPhotosTab');
+    const videosTab = document.getElementById('galleryVideosTab');
+    const photosContent = document.getElementById('galleryPhotosContent');
+    const videosContent = document.getElementById('galleryVideosContent');
+
+    if (photosTab && videosTab && photosContent && videosContent) {
+        photosTab.addEventListener('click', function () {
+            photosTab.classList.add('active');
+            videosTab.classList.remove('active');
+            photosContent.style.display = '';
+            videosContent.style.display = 'none';
+        });
+        videosTab.addEventListener('click', function () {
+            videosTab.classList.add('active');
+            photosTab.classList.remove('active');
+            videosContent.style.display = '';
+            photosContent.style.display = 'none';
+        });
+    }
 
     galleryImgs.forEach(img => {
         img.addEventListener('click', function () {
@@ -31,16 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Gallery Modal Logic
-
-    galleryImgs.forEach(img => {
-        img.addEventListener('click', function () {
-            modalImg.src = this.getAttribute('data-img-src');
-            modalImg.alt = this.getAttribute('alt') || '';
-            modalLabel.textContent = this.getAttribute('data-img-caption') || '';
-            modalDesc.textContent = this.getAttribute('data-img-description') || '';
-        });
-    });
 
     // Gallery Card Scroll Animation
     const animCards = document.querySelectorAll('.gallery-anim-card');
@@ -59,12 +70,4 @@ document.addEventListener("DOMContentLoaded", function() {
         animCards.forEach(card => card.classList.add('visible'));
     }
 
-    galleryImgs.forEach(img => {
-        img.addEventListener('click', function () {
-            modalImg.src = this.getAttribute('data-img-src');
-            modalImg.alt = this.getAttribute('alt') || '';
-            modalLabel.textContent = this.getAttribute('data-img-caption') || '';
-            modalDesc.textContent = this.getAttribute('data-img-description') || '';
-        });
-    });
 });
