@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franz John Paul Samson & CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body class="bg-dark text-light">
+    <header class="container py-4 border-bottom border-secondary mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-2 text-center mb-3 mb-md-0">
+                <img src="image/grad.jpg" alt="Profile" class="rounded-circle img-fluid profile-img">
+            </div>
+            <div class="col-md-7">
+                <h1 class="fw-bold mb-1">Franz John Paul Samson</h1>
+                <h5 class="text-secondary mb-2">Full Stack Developer | Graphic Artist | System Administrator</h5>
+                <p class="mb-0">
+                    <span class="me-3"><i class="bi bi-envelope"></i> sfranzjohnpaul22@email.com</span>
+                    <span class="me-3"><i class="bi bi-phone"></i> +63 923 564 4103</span>
+                    <span><i class="bi bi-geo-alt"></i> Caloocan, Philippines</span>
+                </p>
+            </div>
+            <div class="col-md-3 text-md-end mt-3 mt-md-0">
+                <a href="#" class="btn btn-outline-light btn-sm">Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs mb-4" id="portfolioCVTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="portfolio-tab" data-bs-toggle="tab" data-bs-target="#portfolio" type="button" role="tab" aria-controls="portfolio" aria-selected="true">
+                    Portfolio
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cv-tab" data-bs-toggle="tab" data-bs-target="#cv" type="button" role="tab" aria-controls="cv" aria-selected="false">
+                    CV
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="portfolioCVTabContent">
+            <!-- Portfolio Tab -->
+            <div class="tab-pane fade show active" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+                <!-- Project Highlights Banner (moved here) -->
+                <section class="banner-bubble mb-4">
+                    <span class="highlight-badge"><i class="bi bi-star-fill"></i> Project Highlights</span>
+                    <h2>Showcasing My Best Work</h2>
+                    <p>Explore a selection of my most impactful and innovative projects, demonstrating my skills in web development, automation, and design.</p>
+                    <div class="banner-projects">
+                        <div class="banner-project-card">
+                            <h5><i class="bi bi-gear"></i> PAHTI</h5>
+                            <p>A web app designed to track and automatically calculate the projected batches of raw materials into finished goods for streamlined production planning.</p>
+                        </div>
+                        <div class="banner-project-card">
+                            <h5><i class="bi bi-lightning-charge"></i> PRODCOST</h5>
+                            <p>A web app for calculating and managing product costs efficiently, with real-time data insights and cost breakdowns.</p>
+                        </div>
+                        <div class="banner-project-card">
+                            <h5><i class="bi bi-card-heading"></i> STICKER-LABEL</h5>
+                            <p>A web app for generating and printing sticker labels to uniquely identify and track boxes in inventory and logistics.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Project Images Gallery Section -->
+                <section class="mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <h2 class="h4 border-bottom border-secondary pb-2 mb-0">Project Gallery</h2>
+                        <button id="galleryToggleBtn" class="btn btn-outline-warning btn-sm" type="button">
+                            <i class="bi bi-dash"></i> Minimize
+                        </button>
+                    </div>
+                    <div id="galleryContent">
+                        <!-- PAHTI Gallery -->
+                        <div class="mb-4">
+                            <h3 class="h5 text-warning mb-3"><i class="bi bi-gear"></i> PAHTI</h3>
+                            <div class="row g-4">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card gallery-anim-card bg-dark border-secondary shadow-sm">
+                                        <div class="gallery-img-wrapper">
+                                            <img src="image/dash.png" class="card-img-top gallery-img"
+                                                alt="PAHTI Screenshot 1"
+                                                data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                                data-img-src="image/dash.png"
+                                                data-img-caption="PAHTI - Dashboard"
+                                                data-img-description="This dashboard provides an overview of all key metrics and system status for the PAHTI project.">
+                                            <div class="gallery-img-overlay">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Dashboard Overview</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card gallery-anim-card bg-dark border-secondary shadow-sm">
+                                        <div class="gallery-img-wrapper">
+                                            <img src="image/ordering.png" class="card-img-top gallery-img"
+                                                alt="PAHTI Screenshot 2"
+                                                data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                                data-img-src="image/ordering.png"
+                                                data-img-caption="PAHTI - Batch Calculation"
+                                                data-img-description="The Ordering Web App automatically calculates batch quantities based on user input, streamlining order processing and ensuring accurate batch management.">
+                                            <div class="gallery-img-overlay">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Batch Calculation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card gallery-anim-card bg-dark border-secondary shadow-sm">
+                                        <div class="gallery-img-wrapper">
+                                            <img src="image/jo.png" class="card-img-top gallery-img"
+                                                alt="PAHTI Screenshot 3"
+                                                data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                                data-img-src="image/jo.png"
+                                                data-img-caption="PAHTI - Process Tracking"
+                                                data-img-description="The Job Order Web App efficiently tracks and submits job-related transactions, streamlining workflow and ensuring accurate record-keeping.">
+                                            <div class="gallery-img-overlay">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Process Tracking</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PRODCOST Gallery -->
+                        <div class="mb-4">
+                            <h3 class="h5 text-warning mb-3"><i class="bi bi-lightning-charge"></i> PRODCOST</h3>
+                            <div class="row g-4">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card gallery-anim-card bg-dark border-secondary shadow-sm">
+                                        <div class="gallery-img-wrapper">
+                                            <img src="image/request.png" class="card-img-top gallery-img"
+                                                alt="PRODCOST Screenshot 1"
+                                                data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                                data-img-src="image/request.png"
+                                                data-img-caption="PRODCOST - Purchase Order Request"
+                                                data-img-description="The Purchase Order Web App simplifies requesting materials and items by enabling users to create and manage purchase orders with ease.">
+                                            <div class="gallery-img-overlay">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Purchase Order Request</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card gallery-anim-card bg-dark border-secondary shadow-sm">
+                                        <div class="gallery-img-wrapper">
+                                            <img src="image/vendor.png" class="card-img-top gallery-img"
+                                                alt="PRODCOST Screenshot 2"
+                                                data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                                data-img-src="image/vendor.png"
+                                                data-img-caption="PRODCOST - Vendor Creation"
+                                                data-img-description="The Vendor Management Web App streamlines the creation and updating of vendor details, seamlessly integrating with the Purchase Order system.">
+                                            <div class="gallery-img-overlay">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Vendor Creation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card gallery-anim-card bg-dark border-secondary shadow-sm">
+                                        <div class="gallery-img-wrapper">
+                                            <img src="image/prodoctCosting.png" class="card-img-top gallery-img"
+                                                alt="PRODCOST Screenshot 3"
+                                                data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                                data-img-src="image/prodoctCosting.png"
+                                                data-img-caption="PRODCOST - Product Costing"
+                                                data-img-description="The Product Costing Web App calculates and analyzes product costs, helping businesses make informed pricing decisions.">
+                                            <div class="gallery-img-overlay">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text"> Product Costing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- STICKER-LABEL Gallery -->
+                        <div class="mb-4">
+                            <h3 class="h5 text-warning mb-3"><i class="bi bi-card-heading"></i> STICKER-LABEL</h3>
+                            <div class="row g-4">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card gallery-anim-card bg-dark border-secondary shadow-sm">
+                                        <div class="gallery-img-wrapper">
+                                            <img src="image/print.png" class="card-img-top gallery-img"
+                                                alt="STICKER-LABEL Screenshot 1"
+                                                data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                                data-img-src="image/print.png"
+                                                data-img-caption="STICKER-LABEL - Label Generator"
+                                                data-img-description="The Printing Labels Web App seamlessly integrates with the ERP system to connect with other web app transactions in real time, enabling accurate and efficient label generation.">
+                                            <div class="gallery-img-overlay">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Label Generator</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- map section -->
+                <section class="mb-5">
+                    <div class="map-banner-container mb-4">
+                        <h2 class="h4 border-bottom border-secondary pb-2 mb-3">Location Map</h2>
+                        <div class="map-banner">
+                            <iframe
+                                src="https://www.google.com/maps?q=West+Minister+Tradition+Church,+Caloocan+City,+Philippines&output=embed"
+                                width="100%" height="350"
+                                style="border:0; filter: grayscale(100%) brightness(0.7) contrast(1.2);"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="text-secondary mt-2">
+                            <i class="bi bi-geo-alt"></i> West Minister Tradition Church, Caloocan City, Philippines
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- CV Tab -->
+            <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">
+                <div id="cv-scrollable" class="mt-3">
+                    <!-- Profile Section -->
+                    <section class="mb-4">
+                        <h2 class="h4 border-bottom border-secondary pb-2 mb-3">Profile</h2>
+                        <p>
+                            Passionate programmer with experience in building scalable web applications and solving complex problems. Adept at working with modern technologies and continuously improving skills. Strong background in both frontend and backend development, as well as graphic design and system administration.
+                        </p>
+                    </section>
+                    <!-- Skills Section -->
+                    <section class="mb-4">
+                        <h2 class="h4 border-bottom border-secondary pb-2 mb-3">Skills</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><strong>Languages:</strong> JavaScript, Python, Java, C++</li>
+                                    <li><strong>Frameworks:</strong> React, Node.js, Express, Laravel</li>
+                                    <li><strong>Web:</strong> HTML5, CSS3, Bootstrap</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><strong>Tools:</strong> Git, jasperSoft, Photoshop</li>
+                                    <li><strong>Databases:</strong> MySQL, MongoDB</li>
+                                    <li><strong>Other:</strong> Linux Administration, CI/CD, REST APIs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Experience Section -->
+                    <section class="mb-4">
+                        <h2 class="h4 border-bottom border-secondary pb-2 mb-3">Experience</h2>
+                        <div class="mb-3">
+                            <h5 class="mb-1">System Administrator / Junior Dev <span class="text-secondary fs-6">| Easycash Lending Company</span></h5>
+                            <div class="text-secondary mb-1">Apr 2019 – Aug 2020</div>
+                            <ul>
+                                <li>Ensure the stability, security, and performance of servers and systems. This involves monitoring system performance, applying updates, and troubleshooting issues.</li>
+                                <li>Write and maintain scripts or small applications to automate tasks, improve system operations, or enhance workflows.</li>
+                                <li>Extract meaningful data using MySQL Work Bench and Jaspersoft for generating company reports. This requires the advanced use of SQL for querying the needed data.</li>
+                                <li>Maintain and support the internal applications used by the company. This involves bug-fixing on both frontend and backend. I use JavaScript, HTML and CSS.</li>
+                                <li>Create designs for new and existing websites. This involves generating design for logos, web pages, and brochures. It also includes design for our Facebook posts. I use Photoshop.</li>
+                                <li>I occasionally do system administration by managing our servers using AWS EC2 and AWS S3.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Local IT - technical 1 <span class="text-secondary fs-6">| Concentrix San Lazaro</span></h5>
+                            <div class="text-secondary mb-1">Nov 2020 – March 2022</div>
+                            <ul>
+                                <li>Provide support to end-users for hardware, software, and network issues.</li>
+                                <li>Troubleshoot and resolve technical problems via phone, email, or in-person.</li>
+                                <li>Maintain a knowledge base of common issues and solutions.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Fullstock Web Developer <span class="text-secondary fs-6">| Filstar Distributors inc.</span></h5>
+                            <div class="text-secondary mb-1">July 2021 – Feb 2023</div>
+                            <ul>
+                                <li>Code Writing: Develop, test, and maintain code for applications, websites, or software projects. Write clean, maintainable, and efficient code.</li>
+                                <li>Feature Implementation: Implement new features and functionalities as per the project requirements and specifications.</li>
+                                <li>Bug Fixing: Identify, debug, and fix bugs in existing code or systems.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Freelace Fullstock Web Developer <span class="text-secondary fs-6">| Prima animal health inc.</span></h5>
+                            <div class="text-secondary mb-1">Feb 2023 – jan 2024</div>
+                            <ul>
+                                <li>Design, develop, and maintain websites and web applications based on client requirements.</li>
+                                <li>Write clean, efficient, and well-documented code using HTML, CSS, JavaScript, and backend frameworks
+                                    Optimize website performance, responsiveness, and user experience.
+                                </li>
+                                <li>Troubleshoot and debug issues to ensure smooth functionality.</li>
+                                <li>Collaborate with clients to understand project goals and provide technical recommendations.</li>
+                                <li>Provide post-launch support, maintenance, and updates for existing websites.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Triage Specialist <span class="text-secondary fs-6">| Genpact</span></h5>
+                            <div class="text-secondary mb-1">Jan 2024 2023 – Jul 2024</div>
+                            <ul>
+                                <li>Workflow Optimization: Analyze and evaluate current business processes to identify areas for improvement. Develop and implement new workflows to enhance efficiency and effectiveness.</li>
+                                <li>Documentation: Create and maintain process documentation, including process maps, standard operating procedures (SOPs), and guidelines.</li>
+                                <li>Reporting: Collect, analyze, and report on process performance metrics. Use data to identify trends, measure performance, and make recommendations for improvements.</li>
+                                <li>Metrics Tracking: Monitor key performance indicators (KPIs) to ensure processes meet organizational standards and goals.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- Education Section -->
+                    <section class="mb-4">
+                        <h2 class="h4 border-bottom border-secondary pb-2 mb-3">Education</h2>
+                        <div>
+                            <h5 class="mb-1">B.S in Computer Science</h5>
+                            <div class="text-secondary mb-1">UNIVERSITY OF CALOOCAN CITY, 2018 – 2019</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center py-4 border-top border-secondary mt-5">
+        &copy; 2024 Franz John Paul Samson. All rights reserved.
+    </footer>
+    <!-- Gallery Modal (Enhanced) -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="galleryModalLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="galleryModalImg" src="" alt="" class="img-fluid rounded shadow mb-3" style="max-height:60vh;">
+                    <div id="galleryModalDesc" class="text-start px-3 py-2 bg-secondary bg-opacity-10 rounded" style="color:#e0e0e0;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap & Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light">
+    <!-- Banner Section -->
+    <section class="banner-container d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <h1 id="banner-title" class="display-3 fw-bold"></h1>
+            <p class="lead mt-3">Full Stack Developer | Grahpic artist | System administrator</p>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="image/grad.jpg" alt="Profile" class="rounded-circle img-fluid profile-img">
+            </div>
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>
+                    Hi! I'm a passionate programmer with experience in building scalable web applications and solving complex problems. I love working with modern technologies and continuously improving my skills.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="container py-5">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Project One</h5>
+                        <p class="card-text">A web app that does amazing things using React and Node.js.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Two</h5>
+                        <p class="card-text">An automation tool built with Python to streamline workflows.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Three</h5>
+                        <p class="card-text">A mobile app for productivity, built with Flutter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project Images Gallery Section -->
+    <section class="container py-5">
+        <h2 class="mb-4">Project Gallery</h2>
+        <div class="row g-4">
+            <div class="col-sm-6 col-md-4">
+                <div class="card bg-dark border-secondary">
+                    <img src="image/sample.jpg" class="card-img-top gallery-img" alt="Project 1 Screenshot"
+                         data-bs-toggle="modal" data-bs-target="#galleryModal"
+                         data-img-src="image/sample.jpg" data-img-caption="Screenshot from Project One">
+                    <div class="card-body">
+                        <p class="card-text">Screenshot from Project One</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card bg-dark border-secondary">
+                    <img src="image/sample.jpg" class="card-img-top gallery-img" alt="Project 2 Screenshot"
+                         data-bs-toggle="modal" data-bs-target="#galleryModal"
+                         data-img-src="image/sample.jpg" data-img-caption="UI from Project Two">
+                    <div class="card-body">
+                        <p class="card-text">UI from Project Two</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card bg-dark border-secondary">
+                    <img src="image/sample.jpg" class="card-img-top gallery-img" alt="Project 3 Screenshot"
+                         data-bs-toggle="modal" data-bs-target="#galleryModal"
+                         data-img-src="image/sample.jpg" data-img-caption="Mobile app interface from Project Three">
+                    <div class="card-body">
+                        <p class="card-text">Mobile app interface from Project Three</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="container py-5">
+        <h2 class="mb-4">Contact</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Your Email" required>
+            </div>
+            <div class="col-12">
+                <textarea class="form-control bg-dark text-light border-secondary" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-outline-light">Send Message</button>
+            </div>
+        </form>
+    </section>
+    
+    <footer class="text-center py-4 border-top border-secondary mt-5">
+        &copy; 2024 Programmer Portfolio. All rights reserved.
+    </footer>
+    
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="galleryModalLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="galleryModalImg" src="" alt="" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
